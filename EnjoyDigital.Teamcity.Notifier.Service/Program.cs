@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Configuration;
-using FluentTc;
 using StackExchange.Redis;
 using TeamCitySharp;
 
@@ -27,12 +26,6 @@ namespace ConsoleApplication1
 
                 sub.Publish("teamcity_failedbuilds", message);
             }
-
-            //foreach (var change in build.Changes)
-            //{
-            //    Console.WriteLine(change.Comment);
-            //    Console.WriteLine(change.Username);                
-            //}
         }
     }
 }
